@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<form method="post" action="." class="user register">
+
+<fieldset class="account">
+<legend>{% trans "Account information" %}</legend>
+
+<div>
+<label for="id_username">{% trans "Username" %}</label><br />
+{{ form.username }} 
+{% if form.username.errors %}<span class="form-error"> {{ form.username.errors|join:", " }}</span>{% endif %}
+<br />
+<span class="form-help">
+{% trans "4-15 alphanumeric characters allowed" %}
+</span>
+</div>
+
+<div>
+<label for="id_email">{% trans "Email" %}</label><br />
+{{ form.email }} 
+{% if form.email.errors %}<span class="form-error"> {{ form.email.errors|join:", " }}</span>{% endif %}</td>
+</div>
+
+<div>
+<label for="id_first_name">{% trans "First name" %}</label><br />
+{{ form.first_name }} 
+{% if form.first_name.errors %}<span class="form-error"> {{ form.first_name.errors|join:", " }}</span>{% endif %}</td>
+</div>
+
+<div>
+<label for="id_last_name">{% trans "Last name" %}</label><br />
+{{ form.last_name }} 
+{% if form.last_name.errors %}<span class="form-error"> {{ form.last_name.errors|join:", " }}</span>{% endif %}</td>
+</div>
+
+<div>
+<label for="id_password1">{% trans "New password" %}</label><br />
+{{ form.password1 }} 
+{% if form.password1.errors %}<span class="form-error"> {{ form.password1.errors|join:", " }}</span>{% endif %}
+<br />
+<span class="form-help">
+{% trans "Leave blank if you don't want to change it" %}
+</span>
+</div>
+
+<div>
+<label for="id_password1">{% trans "Retype password" %}</label><br />
+{{ form.password2 }} 
+{% if form.password2.errors %}<span class="form-error"> {{ form.password2.errors|join:", " }}</span>{% endif %}
+</div>
+
+</fieldset>
+
+<fieldset class="favorites">
+<legend>{% trans "Favorites" %}</legend>
+
+{% if user.favorites.all %}
+<div>
+<label for="id_favs">{% trans "Select the favorites you want to delete" %}</label><br />
+{{ form.favs }} 
+</div>
+{% else %}
+<span class="tip">{% trans "You don't have any favorites" %}</span>
+{% endif %}
+
+</fieldset>
+
+<div class="center clear"> 
+<input type="submit" value="{% trans 'Modify your profile' %}" />
+</div>
+</form>
+
+{% endblock %}

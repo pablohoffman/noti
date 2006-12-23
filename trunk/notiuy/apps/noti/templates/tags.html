@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+{% include "blocks/sidebar.html" %}
+
+<div class='sectitle'>{% trans "Tags by category" %}</div>
+
+{% if page.ctags %}
+<div class='tagcloud'>
+{% for tag in page.ctags %}
+<span style='font-size: {{ tag.size }}px'><a href='{{ tag.linkwhen }}'>{{ tag.name }}({{ tag.quant }})</a></span>
+{% endfor %}
+</div>
+{% else %}
+<p class='empty'><span class='tip'>{% trans "No category tags" %}</span></p>
+{% endif %}
+
+
+<div class='sectitle'>{% trans "Tags by keywords" %}</div>
+
+{% if page.ktags %}
+<div class='tagcloud'>
+{% for tag in page.ktags %}
+<span style='font-size: {{ tag.size }}px'><a href='{{ tag.linkwhen }}'>{{ tag.name }}({{ tag.quant }})</a></span>
+{% endfor %}
+</div>
+{% else %}
+<p class='empty'><span class='tip'>{% trans "No keyword tags" %}</span></p>
+{% endif %}
+
+{% endblock %}

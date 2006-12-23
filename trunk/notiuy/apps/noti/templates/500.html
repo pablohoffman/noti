@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="msg">
+<div class="msgtop"><div></div></div>
+<div class="msgcontent">
+<img src="{{ cfg.urlbase }}/media/err.gif" width="16" height="16" alt="Warning" /><br />
+{% trans "La página que está intentando acceder no funciona. Por favor, reporte este problema a <a href="http://pablohoffman.com/contact/">Pablo Hoffman</a>. Gracias." %}
+</div>
+<div class="msgbottom"><div></div></div>
+</div>
+{% endblock %}

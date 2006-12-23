@@ -1,0 +1,19 @@
+{% block sidebar %}
+<div id="sidebar">
+<div id="sidebartop"><div></div></div>
+<div id="sidebarcontent">
+{% for block in page.sidebar %}
+<div>
+<h1>{{ block.title }}</h1>
+<ul>
+{% for link in block.links %}
+<li><a href='{{ link.url|escape }}' {% if link.selected %}class='selected'{% endif %}>{{ link.label }}</a></li>
+{% endfor %}
+</ul>
+</div>
+{% endfor %}
+{% include "boxes/subscribe.html" %}
+</div>
+<div id="sidebarbottom"><div></div></div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% load i18n %}
+{% block titlebar %}
+<div id="titlebar">
+<div id="titlebartop"><div></div></div>
+<div id="titlebarcontent">
+<form action="{{ cfg.urlbase }}/search/" method="get">
+<div id="search">
+<input type="text" id="searchbox" name="q" value="{% if page.q %}{{ page.q }}{% else %}{% if page.search %}{{ page.search.label }}{% else %}{% trans "Search all" %}{% endif %}{% endif %}" size="36" {% if q %}{% else %}onfocus="enableSearch(this)" onblur="disableSearch(this)" {% endif %}/> 
+<div class="small">
+<input type="radio" name="r" value="" id="r_today" checked="checked" /><label for="r_today">{% trans "today" %}</label>
+<input type="radio" name="r" value="lastweek" id="r_week" {% ifequal page.when.range "week" %}checked="checked"{% endifequal %} /><label for="r_week">{% trans "week" %}</label>
+<input type="radio" name="r" value="lastmonth" id="r_month" {% ifequal page.when.range "month" %}checked="checked"{% endifequal %} /><label for="r_month">{% trans "month" %}</label>
+<input type="radio" name="r" value="lastyear" id="r_year" {% ifequal page.when.range "year" %}checked="checked"{% endifequal %} /><label for="r_year">{% trans "year" %}</label>
+<input type="radio" name="r" value="all" id="r_all" {% ifequal page.when.range "all" %}checked="checked"{% endifequal %} /><label for="r_all">{% trans "all" %}</label>
+<br />
+{% if page.search %}
+<input type="hidden" name="{{ page.search.key }}" value="{{ page.search.val }}" />
+{% endif %}
+</div>
+</div>
+<h1 id='pagetitle'>{{ page.title }}</h1>
+</form>
+</div>
+<div id="titlebarbottom"><div></div></div>
+</div>
+
+{% endblock %}

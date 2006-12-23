@@ -1,0 +1,37 @@
+{% load i18n %}
+{% block navbar %}
+<div id="navbar">
+<div id="navbartop"><div></div></div>
+<div id="navbarcontent">
+<ul class='admin'>
+{% if user.is_authenticated %}
+<li><a {% ifequal page.nav "profile" %}class='selected'{% endifequal %} href="{{ cfg.urlbase }}/profile/">{% trans "Profile" %}</a></li>
+{% if user.is_staff %}
+<li><a href="/admin/">{% trans "Admin" %}</a></li>
+{% endif %}
+<li><a href="{{ cfg.urlbase }}/logout/">{% trans "Logout" %}</a></li>
+{% else %}
+<li><a {% ifequal page.nav "login" %}class='selected'{% endifequal %} href="{{ cfg.urlbase }}/login/">{% trans "Login" %}</a></li>
+<li><a {% ifequal page.nav "register" %}class='selected'{% endifequal %} href="{{ cfg.urlbase }}/register/">{% trans "Register" %}</a></li>
+{% endif %}
+
+<li><a {% ifequal page.nav "help" %}class='selected'{% endifequal %} href="{{ cfg.urlbase }}/help/">{% trans "Help"%}</a></li>
+</ul>
+
+<ul class='areas'>
+{% if user.is_authenticated %}
+<li><a {% ifequal page.nav "user" %}class='selected'{% endifequal %} href="{{ cfg.urlbase }}/user/{{ user.username }}/">{{ user.username }}</a></li>
+{% endif %}
+<li><a {% ifequal page.nav "popular" %}class='selected'{% endifequal %} href="{{ cfg.urlbase }}/popular/">{% trans "Popular" %}</a></li>
+<li><a {% ifequal page.nav "site" %}class='selected'{% endifequal %} href="{{ cfg.urlbase }}/sites/">{% trans "Sites" %}</a></li>
+<li><a {% ifequal page.nav "tag" %}class='selected'{% endifequal %} href="{{ cfg.urlbase }}/tags/">{% trans "Tags" %}</a></li>
+</ul>
+
+<div class='sitename'><a href="{{ cfg.urlbase }}/">{{ cfg.sitename }}</a> &nbsp;&nbsp;&nbsp; <a href="http://pablohoffman.com/cgi-bin/twiki/bin/view/Notiuy/ComentariosNotiUY2">{% trans "feedback?"%}</a>
+</div>
+</div>
+
+<div id="navbarbottom"><div></div></div>
+</div>
+
+{% endblock %}
