@@ -1,0 +1,9 @@
+{% load i18n %}
+{% if page.paginator.needed %}
+<div class='pages'>
+{% for p in page.paginator.pages %}
+<a href='{{ p.link }}' {% if p.active %}class='selected'{% endif %}>{{ p.number }}</a>
+{% endfor %}
+<div>{{ page.paginator.total }} {% trans "articles" %}</div>
+</div>
+{% endif %}

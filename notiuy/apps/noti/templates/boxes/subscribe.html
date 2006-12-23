@@ -1,0 +1,12 @@
+{% load i18n %}
+{% if page.subs %}
+<h1>{% trans "Subscribe" %}</h1>
+
+<ul>
+{% if user.is_authenticated %}{% if page.subs.add %}
+<li><a href='{{ page.subs.add|escape }}'><img src='{{ cfg.urlbase }}/media/add.png' width='14' height='14' alt='' /> Add to favorites</a></li>
+{% endif %}{% endif %}
+<li><a href='{{ page.subs.rss2|escape }}'><img src='{{ cfg.urlbase }}/media/feed.png' width='14' height='14' alt='' /> RSS2</a></li>
+<li><a href='{{ page.subs.atom|escape }}'><img src='{{ cfg.urlbase }}/media/feed.png' width='14' height='14' alt='' /> Atom</a></li>
+</ul>
+{% endif %}

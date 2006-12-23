@@ -1,0 +1,4 @@
+# the purpose of this robots.txt file is to prevent web robots from following
+# articles (and thus increase their ranking)
+User-agent: *
+Disallow: /article

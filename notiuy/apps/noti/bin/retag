@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+import os
+os.environ['DJANGO_SETTINGS_MODULE'] = 'notiuy.settings'
+
+from optparse import OptionParser
+usage = """usage: %prog [options] [DATE...]
+Rebuild keyword tags for all articles on the given dates. If no date given
+defaults to today."""
+
+parser = OptionParser(usage)
+parser.add_option("-t", "--test", action="store_true", dest="test", 
+                  default=0, 
+                  help="test mode: only show tags that would be applied")
+parser.add_option("-v", "--verbose", action="count", dest="verbose", 
+                  default=0, 
+                  help="set verbose (debug) mode. double it to enhance")
+parser.add_option("-r", "--reset", action="store_true", dest="reset", 
+                  default=0, 
+                  help="clear all tags before applying new tags")
+parser.add_option("-q", "--quiet", action="store_true", dest="quiet", 
+                  default=0, 
+                  help="supress normal output")
+
+(opt, arg) = parser.parse_args()
+
+
+if opt.quiet:
+    sys.stdout = file('/dev/null', 'w')
+
+from notiuy.noti import cfg, crawlers
+crawlers.retag(arg, opt)

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="msg">
+<div class="msgtop"><div></div></div>
+<div class="msgcontent">
+<img src="{{ cfg.urlbase }}/media/err.gif" width="16" height="16" alt="Warning" /><br />
+{% trans "Sorry, the page you're trying to access is no longer available." %}
+</div>
+<div class="msgbottom"><div></div></div>
+</div>
+{% endblock %}

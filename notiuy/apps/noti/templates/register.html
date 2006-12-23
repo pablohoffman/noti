@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<form method="post" action="." class="user register">
+
+<fieldset class="register">
+<legend>{% trans "Account information" %}</legend>
+
+<div>
+<label for="id_username">{% trans "Choose a username" %}</label><br />
+{{ form.username }} 
+{% if form.username.errors %}<span class="form-error"> {{ form.username.errors|join:", " }}</span>{% endif %}
+<br />
+<span class="form-help">
+{% trans "Only alphanumeric characters. 3 characters miniumum, 15 characters maximum." %}
+</span>
+</div>
+
+<div>
+<label for="id_email">{% trans "Enter your email" %}</label><br />
+{{ form.email }} 
+{% if form.email.errors %}<span class="form-error"> {{ form.email.errors|join:", " }}</span>{% endif %}
+</div>
+
+<div>
+<label for="id_password1">{% trans "Choose a password" %}</label><br />
+{{ form.password1 }} 
+{% if form.password1.errors %}<span class="form-error"> {{ form.password1.errors|join:", " }}</span>{% endif %}
+<br />
+<span class="form-help">
+{% trans "Must be at least 6 characters long" %}
+</span>
+</div>
+
+<div>
+<label for="id_password1">{% trans "Retype password" %}</label><br />
+{{ form.password2 }} 
+{% if form.password2.errors %}<span class="form-error"> {{ form.password2.errors|join:", " }}</span>{% endif %}
+</div>
+
+</fieldset>
+
+<div class="center"> 
+<input type="submit" value="{% trans 'Create new user' %}" />
+</div>
+</form>
+
+{% endblock %}

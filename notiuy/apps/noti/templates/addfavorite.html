@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<form method="post" action="." class="user login">
+
+<fieldset class="favorite">
+<legend>{% trans "Add favorite" %}</legend>
+
+<div>
+<label for="id_name">{% trans "Enter a name for your new favorite" %}</label><br />
+{{ form.name }}
+{% if form.name.errors %}<span class="form-error"> {{ form.name.errors|join:", " }}</span>{% endif %}
+<br />
+<span class="form-help">
+{% trans "Only alphanumeric characters allowed" %}
+</span>
+</div>
+
+<div>
+<label>{% trans "Favorite path" %}</label><br />
+{{ form.path }}
+<p class="form-ro">{{ form.data.path }}
+{% if form.path.errors %}<span class="form-error"> {{ form.path.errors|join:", " }}</span>{% endif %}
+<br />
+</p>
+</div>
+
+</fieldset>
+
+<div class="center"> 
+<input type="submit" value="{% trans 'Add favorite' %}" />
+</div>
+
+</form>
+{% endblock %}

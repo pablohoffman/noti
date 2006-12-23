@@ -1,0 +1,36 @@
+{% load i18n %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>{{ page.title }} | {{ cfg.sitename }}</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="{{ cfg.urlbase }}/media/styles.css" />
+{% if page.subs %}
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ page.subs.rss2|escape }}" />
+  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ page.subs.atom|escape }}" />
+{% endif %}
+  <script type="text/javascript" src="{{ cfg.urlbase }}/media/noti.js" />
+{% include "custom/head.html" %}
+</head>
+
+<body>
+{% include "custom/body-top.html" %}
+
+{% include "blocks/navbar.html" %}
+
+{% include "blocks/titlebar.html" %}
+
+{% if page.msg or page.err %}
+{% include "boxes/message.html" %}
+{% endif %}
+
+<div id='content'>
+{% block content %}{% endblock %}
+</div>
+
+{% include "blocks/footbar.html" %}
+
+{% include "custom/body-bottom.html" %}
+
+</body>
+</html>

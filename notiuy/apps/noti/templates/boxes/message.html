@@ -1,0 +1,15 @@
+<div class="msg">
+<div class="msgtop"><div></div></div>
+<div class="msgcontent">
+{% if page.msg %}
+<img src="{{ cfg.urlbase }}/media/msg.gif" width="16" height="16" alt="Warning" /><br />
+{{ page.msg }}
+{% endif %}
+{% if page.err %}
+<img src="{{ cfg.urlbase }}/media/err.gif" width="16" height="16" alt="Warning" /><br />
+{{ page.err }}
+{% endif %}
+
+</div>
+<div class="msgbottom"><div></div></div>
+</div>

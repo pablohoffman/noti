@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+{% include "blocks/sidebar.html" %}
+
+{% if page.back %}
+<div class='more'>
+<a href='{{ page.back.link }}'>&larr; {% trans "Go back to" %} {{ page.back.label }}</a>
+</div>
+{% endif %}
+
+{% include "boxes/paginator.html" %}
+
+{% if page.sections %}
+
+{% for section in page.sections %}
+
+{% if page.multisection %}
+<div class='sectitle'>{{ section.name|escape }}</div>
+{% endif %}
+
+{% if section.articles %}
+
+{% for article in section.articles %}
+<div class='article'>
+
+<div class='info'>
+<div class='source'>
+<span class='site'><a href='{{ article.site.link }}'>{{ article.site.name|escape }}</a></span><br />
+<span class='category'><a href='{{ article.category.link }}'>{{ article.category.name|escape }}</a></span>
+</div>
+<div class='rank {% if article.is_popular %}popular{% endif %}'>
+<strong>{{ article.rank }}</strong> {% trans "views" %}
+</div>
+</div>
+
+<div class='data'>
+<h2><a href='{{ article.link }}' rel='nofollow'>{{ article.title|escape }}</a></h2>
+
+<div class='header'>
+
+<div class='date'>
+{{ article.datetime|date:"j M Y, g:i a" }}
+</div>
+
+<div class='tags'>
+{% trans "Tags" %}: 
+{% for tag in article.alltags %}
+<a href='{{ tag.link }}'>{{ tag.name }}</a> 
+{% endfor %}
+</div>
+
+</div>
+
+</div>
+
+<p>{{ article.text|escape }}</p>
+
+</div>
+{% endfor %}
+
+{% if section.more %}
+<div class='more'>
+<a href='{{ section.link }}' class='more'><img src='{{ cfg.urlbase }}/media/more.png' width='14' height='14' alt="more" /> {% trans "View all news from" %} {{ section.name|escape }}</a>
+</div>
+{% endif %}
+
+{% include "boxes/paginator.html" %}
+
+{% else %}
+<p class='empty'><span class='tip'>{% trans "No news" %}</span></p>
+{% endif %}
+
+{% endfor %}
+
+{% else %}
+<p class='empty'><span class='tip'>{{ page.nosections }}</span></p>
+{% endif %}
+
+{% endblock %}
