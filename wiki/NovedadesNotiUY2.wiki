@@ -1,5 +1,4 @@
 #summary Novedades de la versión 2.0
-#labels Featured
 
 = Novedades - NotiUY 2.0 =
 
