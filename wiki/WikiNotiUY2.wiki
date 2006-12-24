@@ -1,0 +1,36 @@
+#summary Todo sobre el nuevo NotiUY 2.0
+
+= Wiki de NotiUY 2.0 =
+
+Bienvenido al wiki de NotiUY 2.0. Esta web es para colaborar y compartir ideas sobre la nueva versión del sitio [[http://beta.notiuy.com/][NotiUY]]. Siéntete libre de registrar un usuario y modificar el contenido de estas páginas.
+
+A partir de hoy (21 Nov de 2006) se encuentra disponible la nueva versión de NotiUY en la siguiente dirección:
+
+http://beta.notiuy.com/
+
+NotiUY 2.0 beta se encuentra actualmente en fase de pruebas. Una vez que se encuentre lo suficientemente estable pasará a reemplazar la versión de NotiUY que actualmente está disponible en http://notiuy.com/
+
+  * [NovedadesNotiUY2 Novedades]
+    * ¿Qué hay de nuevo en NotiUY 2.0?
+  * [ComentariosNotiUY2 Comentarios]
+    * Comentarios sobre la nueva versión beta
+  * [PendientesNotiUY Mejoras pendientes]
+    * Mejoras pendientes para la versión 2.0 final
+  * [SitiosDisponibles Sitios disponibles]
+    * Sitios dispnibles en NotiUY 2.0
+  * [ComoColaborarNotiUY2 Como colaborar]
+    * Entérate de como podes colaborar con NotiUY
+  * [ColaboradoresNotiUY Colaboradores]
+    * Personas que han colaborado con NotiUY
+  * [ContactoNotiUY  Contacto]
+    * Como contactarnos
+  * [HistoriaNotiUY Historia]
+    * Historia de la evolución de NotiUY
+
+== Sobre los antiguos usuarios y noticias: ==
+
+Tanto los usuarios como las noticias existentes en el viejo NotiUY no fueron migrados a la nueva versión beta, ni lo serán mientras ésta se encuentre en fase de prueba. Una vez liberada la versión final de NotiUY 2.0 se juntarán los usuarios de la versión 2.0 con los viejos usuarios de la 1.0.
+
+
+
+
