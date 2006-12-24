@@ -1,5 +1,4 @@
 #summary Majoras pendientes en NotiUY 2.0
-#labels Featured
 
 = Mejores pendientes - NotiUY 2.0 =
 
