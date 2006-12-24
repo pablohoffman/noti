@@ -1,4 +1,5 @@
 #summary Todo sobre el nuevo NotiUY 2.0
+#labels Featured
 
 = Wiki de NotiUY 2.0 =
 
@@ -30,6 +31,5 @@ NotiUY 2.0 beta se encuentra actualmente en fase de pruebas. Una vez que se encu
 == Sobre los antiguos usuarios y noticias: ==
 
 Tanto los usuarios como las noticias existentes en el viejo NotiUY no fueron migrados a la nueva versión beta, ni lo serán mientras ésta se encuentre en fase de prueba. Una vez liberada la versión final de NotiUY 2.0 se juntarán los usuarios de la versión 2.0 con los viejos usuarios de la 1.0.
-
 
 
