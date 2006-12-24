@@ -1,0 +1,5 @@
+#summary Como contactarnos
+
+= NotiUY - Contacto =
+
+Por el momento la única forma de contactarnos es enviando un mensaje al coordinador del proyecto: [http://pablohoffman.com/contact/ Pablo Hoffman].
