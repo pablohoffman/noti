@@ -1,5 +1,4 @@
 #summary Como colaborar con el proyecto NotiUY
-#labels Featured
 
 = Como colaborar con NotiUY =
 
@@ -28,4 +27,3 @@ Un factor clave para el crecimiento de NotiUY es su difusión. Si te gusta NotiU
 == Documentación ==
 
 Aunque el uso de NotiUY es bastante intuitivo (o, al menos, ese es uno de sus objetivos) sería bueno contar con una ayuda bien redactada (en modo de intrducción o tutorial) que le explique a la gente el funcionamiento del sitio, y las ventajas en comparación con otros sitios de noticias. Algo que transmita el gran ahorro de tiempo que supone el uso de NotiUY frente a las alternativas tradicionales.
-
