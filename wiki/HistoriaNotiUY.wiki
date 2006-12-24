@@ -1,4 +1,5 @@
 #summary Historia sobre el desarrollo de NotiUY
+#labels Featured
 
 = Un poco de historia sobre NotiUY =
 
@@ -17,5 +18,4 @@ Se inagura la versión 1.0 final del sitio NotiUY, luego de haber corregido los 
 == 21 Noviembre 2006 ==
 
 Sale al aire la versión 2.0 beta de NotiUY, que es nueva versión reescrita de cero en Python y django.
-
 
