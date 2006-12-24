@@ -1,0 +1,22 @@
+#summary Majoras pendientes en NotiUY 2.0
+
+= Mejores pendientes - NotiUY 2.0 =
+
+La siguiente es un lista de característcias pendientes a implementar para la versión 2.0 final de NotiUY.
+
+La importancia se determina en función del interés (cantidad de votos) que manifieste dicha característica en la [[ComentariosNotiUY2][página de comentarios]] y es una medida de la probabilidad que dicha característica sea implementada.
+
+|| *Característica* ||  *Importancia* || *Dificultad (estimada)* ||
+|| traducción al español || alta || baja ||
+|| que las noticias incorpóren imágenes || baja || media ||
+|| interfaz para celulares || baja || %ICON{led-red}% %ICON{led-red}% ||
+|| notificaciónes via mail de las noticias de favoritos || media || baja ||
+|| búsqueda avanzada (en en día particular, por ejemplo) || media || baja ||
+|| relacionamiento automático entre noticias usando IA || baja || alta ||
+|| poder comentar noticias || ? || baja ||
+|| moderación de noticias (subir o bajar el puntaje de las noticias según su contenido) || ? || media ||
+|| cambio de clave por olvido (via mail) || baja || baja ||
+|| usar escalas logaritmicas en nubes de etiquetas || baja || baja ||
+
+Para poder terminar estas tareas necesitamos coloboración. NotiUY está escrito en [http://www.djangoproject.com django], que es un framework web para [http://www.python.org python]. Si sabes Python y/o django eremos muy bienvenido a colaborar con el proyecto y ser parte de NotiUY. No dudes en [ContactoNotiUY contactarnos].
+
