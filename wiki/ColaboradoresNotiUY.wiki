@@ -1,4 +1,5 @@
 #summary Quienes han colaborado con NotiUY
+#labels Featured
 
 = Colaboradores NotiUY =
 
