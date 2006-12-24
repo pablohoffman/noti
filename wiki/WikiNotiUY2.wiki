@@ -18,7 +18,7 @@ NotiUY 2.0 beta se encuentra actualmente en fase de pruebas. Una vez que se encu
     * Mejoras pendientes para la versión 2.0 final
   * [SitiosDisponibles Sitios disponibles]
     * Sitios dispnibles en NotiUY 2.0
-  * [ComoColaborarNotiUY2 Como colaborar]
+  * [ComoColaborar Como colaborar]
     * Entérate de como podes colaborar con NotiUY
   * [ColaboradoresNotiUY Colaboradores]
     * Personas que han colaborado con NotiUY
@@ -30,7 +30,6 @@ NotiUY 2.0 beta se encuentra actualmente en fase de pruebas. Una vez que se encu
 == Sobre los antiguos usuarios y noticias: ==
 
 Tanto los usuarios como las noticias existentes en el viejo NotiUY no fueron migrados a la nueva versión beta, ni lo serán mientras ésta se encuentre en fase de prueba. Una vez liberada la versión final de NotiUY 2.0 se juntarán los usuarios de la versión 2.0 con los viejos usuarios de la 1.0.
-
 
 
 
