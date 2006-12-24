@@ -1,5 +1,4 @@
 #summary Como contactarnos
-#labels Featured
 
 = NotiUY - Contacto =
 
