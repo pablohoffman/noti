@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from urllib import urlopen
 from socket import timeout
 import re
-from notiuy.noti.crawlers import NotiCrawler
+from notiuy.apps.noti.crawlers import NotiCrawler
 
 class Crawler(NotiCrawler):
     siteslug = 'espectador'   

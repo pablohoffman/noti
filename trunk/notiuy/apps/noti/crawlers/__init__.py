@@ -3,9 +3,10 @@ from datetime import datetime, date
 import htmlentitydefs
 import re
 
-from noti.models import Article, Site, Category, Tag, Keyword
-from noti.utils.httppost import post_multipart
-from noti import cfg, version
+from notiuy.apps.noti import cfg, version
+from notiuy.apps.noti.models import Article, Site, Category, Tag, Keyword
+from notiuy.apps.noti.utils.httppost import post_multipart
+from notiuy.apps.noti.times import When
 
 sep = '-' * 78 + "\n"
 
@@ -84,7 +85,7 @@ def retag(dates, opt):
 
     tagre = buildtagre()
     for d in dates:
-        for article in Article.objects.matching(year=d[0:4], month=d[4:6], day=d[6:8]):
+        for article in Article.objects.matching(when=When(d)):
             tags = tag(article, tagre, opt.test, opt.reset)
             if opt.verbose or tags:
                 print "%s | %s" % (article.category, article.title)

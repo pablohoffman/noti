@@ -203,6 +203,7 @@ def sites(request, when='', params=None):
 
     page = NewsPage(request, 'site', title, when, nosubs=True)
     page.sidebar.append(ObjectNav(Site.objects.all(), when, _('Sites')))
+    page.sidebar.append(OrderNav(request))
     page.sidebar.append(RangeNav('sites', when))
     page.sidebar.append(DayNav('sites', when))
     for site in sites:
@@ -213,9 +214,8 @@ def sites(request, when='', params=None):
     
 
 def popular(request, when='', params=None):
-    order = getarg('o', request, params)
     when = When(when)
-    articles = Article.objects.matching(when=when, order=order, limit=cfg.popular_max_articles)
+    articles = Article.objects.matching(when=when, order='rank', limit=cfg.popular_max_articles)
     if not request: return articles
 
     page = NewsPage(request, 'popular', _('Most popular news'), when)

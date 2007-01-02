@@ -10,7 +10,7 @@ the defaults crawlers list from in cfg.crawlers"""
 parser = OptionParser(usage)
 parser.add_option("-t", "--test", action="store_true", dest="test", 
                   default=0, 
-                  help="test mode: crawl sites but don't actully add news")
+                  help="test mode: crawl sites but don't actually add news")
 parser.add_option("-v", "--verbose", action="count", dest="verbose", 
                   default=0, 
                   help="set verbose (debug) mode. double it to enhance")
@@ -26,5 +26,5 @@ parser.add_option("-q", "--quiet", action="store_true", dest="quiet",
 if opt.quiet:
     sys.stdout = file('/dev/null', 'w')
 
-from notiuy.noti import cfg, crawlers
+from notiuy.apps.noti import cfg, crawlers
 crawlers.crawl(arg or cfg.crawlers, opt)

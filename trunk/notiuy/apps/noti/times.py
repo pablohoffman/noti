@@ -4,7 +4,7 @@ import re
 class When:
     "Class which represents an abstract time range for displaying articles"
 
-    dtre = re.compile(r'^(\d\d\d\d)-(\d\d)-(\d\d)$')
+    dtre = re.compile(r'^(\d\d\d\d)-?(\d\d)-?(\d\d)$')
     labels = {'today': _('last 24 hs'),
               'week': _('last week'),
               'month': _('last month'),
