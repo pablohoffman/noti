@@ -5,7 +5,7 @@ Noti - Crawler for http://observa.com.uy
 from datetime import datetime
 from urllib import urlopen
 import re
-from noti.crawlers import NotiCrawler
+from notiuy.apps.noti.crawlers import NotiCrawler
 
 class Crawler(NotiCrawler):
     siteslug = 'observa'

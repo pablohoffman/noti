@@ -4,7 +4,7 @@ Noti: crawler for http://www.utlimasnoticias.com.uy
 
 from urllib import urlopen
 import re
-from noti.crawlers import NotiCrawler
+from notiuy.apps.noti.crawlers import NotiCrawler
 
 class Crawler(NotiCrawler):
     siteslug = 'ultimas-noticias'

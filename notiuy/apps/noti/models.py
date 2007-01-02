@@ -38,7 +38,7 @@ class ArticleManager(models.Manager):
         if order == 'time':
             articles = articles.order_by('-datetime')
         else:
-            articles = articles.order_by('-rank')
+            articles = articles.order_by('-rank', '-datetime')
 
         if text:
             articles = articles.filter(Q(title__icontains=text) | Q(text__icontains=text))

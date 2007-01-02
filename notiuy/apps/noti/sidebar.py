@@ -13,8 +13,9 @@ class DayNav:
         self.title = title
         self.links = [{'url': pl + date.today().strftime('%Y-%m-%d/'), 'label': _('Today'), 'selected': when.date==date.today()}]
         dt = datetime.now()
+        td = timedelta(1)
         for i in range(1, 7):
-            dt = dt - timedelta(i)
+            dt -= td
             self.links.append({'url': pl + dt.strftime('%Y-%m-%d/'), 'label': dt.strftime('%A %d'), 'selected': when.date==dt.date()})
 
 

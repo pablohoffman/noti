@@ -5,9 +5,7 @@ Noti - Crawler for http://www.larepublica.com.uy
 import re
 from datetime import date, datetime
 from urllib import urlopen
-from noti.crawlers import NotiCrawler
-
-import sys
+from notiuy.apps.noti.crawlers import NotiCrawler
 
 class Crawler(NotiCrawler):
     siteslug = 'la-republica'   
