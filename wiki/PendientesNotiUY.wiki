@@ -4,7 +4,7 @@
 
 La siguiente es un lista de característcias pendientes a implementar para la versión 2.0 final de NotiUY.
 
-La importancia se determina en función del interés (cantidad de votos) que manifieste dicha característica en la [[ComentariosNotiUY2][página de comentarios]] y es una medida de la probabilidad que dicha característica sea implementada.
+La importancia se determina en función del interés (cantidad de votos) que manifieste dicha característica en la [ComentariosNotiUY2 página de comentarios] y es una medida de la probabilidad que dicha característica sea implementada.
 
 || *Característica* ||  *Importancia* || *Dificultad (estimada)* ||
 || traducción al español || alta || baja ||
