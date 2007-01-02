@@ -2,12 +2,6 @@
 
 = Comentarios sobre NotiUY 2.0 =
 
-Por el momento, dejar los comentarios en [http://vampiroz.org/2006/11/notiuy-20-avant-premiere/#respond esta página].
+Pueden enviar sus comentarios dejando un mensaje en el [http://groups-beta.google.com/group/notiuy grupo del proyecto].
 
-Cualquier comentario es bienvenido (reporte de problemas, solicitud de mejoras, etc).
-
-No es necesario revisar si ya existe un pedido similar anteriormente. La duplicación de una solicitud (o reporte de problema) hará que ésta sea tenida más en cuenta a la hora de decidir cual implementar primero, puesto que tendrán más prioridad las más populares.
-
-Puede revisar la lista de [PendientesNotiUY nuevas mejoras pendientes] y votar sobre ellas.
-
-
+Muchas gracias!
