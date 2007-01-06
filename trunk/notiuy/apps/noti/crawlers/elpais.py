@@ -3,7 +3,7 @@ Noti: Crawler for www.elpais.com.uy
 """
 
 from datetime import date
-from notiuy.apps.noti.utils import feedparser
+from notiuy.utils import feedparser
 from notiuy.apps.noti.crawlers import NotiCrawler
 
 class Crawler(NotiCrawler):
