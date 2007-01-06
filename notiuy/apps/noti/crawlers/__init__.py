@@ -5,7 +5,6 @@ import re
 
 from notiuy.apps.noti import cfg, version
 from notiuy.apps.noti.models import Article, Site, Category, Tag, Keyword
-from notiuy.apps.noti.utils.httppost import post_multipart
 from notiuy.apps.noti.times import When
 
 sep = '-' * 78 + "\n"

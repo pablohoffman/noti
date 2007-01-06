@@ -3,7 +3,7 @@ Noti - crawler for http://www.montevideo.com.uy
 """
 
 from datetime import datetime
-from notiuy.apps.noti.utils import feedparser
+from notiuy.utils import feedparser
 from notiuy.apps.noti.crawlers import NotiCrawler
 
 class Crawler(NotiCrawler):
