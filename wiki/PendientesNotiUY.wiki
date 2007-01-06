@@ -7,7 +7,6 @@ La siguiente es un lista de característcias pendientes a implementar para la ve
 La importancia se determina en función del interés (cantidad de votos) que manifieste dicha característica en la [ComentariosNotiUY2 página de comentarios] y es una medida de la probabilidad que dicha característica sea implementada.
 
 || *Característica* ||  *Importancia* || *Dificultad (estimada)* ||
-|| traducción al español || alta || baja ||
 || que las noticias incorporen imágenes || baja || media ||
 || interfaz para celulares || baja || media ||
 || notificaciones via mail de las noticias de favoritos || media || baja ||
