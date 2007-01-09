@@ -1,0 +1,389 @@
+# Noti 2.0.0 - translation strings
+# Copyright (C) 2007 Pablo Hoffman
+# This file is distributed under the same license as the Noti package.
+# Pablo Hoffman <pablo@pablohoffman.com>, 2007.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Noti 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 21:24-0200\n"
+"PO-Revision-Date: 2007-01-06 20:43-0200\n"
+"Last-Translator: Pablo Hoffman <pablo@pablohoffman.com>\n"
+"Language-Team: Pablo Hoffman <pablo@pablohoffman.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: times.py:8 times.py:24
+msgid "last 24 hs"
+msgstr "últimas 24 hs"
+
+#: times.py:9
+msgid "last week"
+msgstr "última semana"
+
+#: times.py:10
+msgid "last month"
+msgstr "último mes"
+
+#: times.py:11
+msgid "last year"
+msgstr "último año"
+
+#: times.py:12 times.py:28
+msgid "all times"
+msgstr "de siempre"
+
+#: views.py:27 templates/login.html:8 templates/login.html.py:22
+#: templates/blocks/navbar.html:14
+msgid "Login"
+msgstr "Entrar"
+
+#: views.py:37
+msgid "User does not exist or wrong password"
+msgstr "El usuario no existe o la clave es incorrecta"
+
+#: views.py:44
+msgid "New user"
+msgstr "Nuevo usuario"
+
+#: views.py:52
+msgid "New user created succesfully. You may login now."
+msgstr "El nuevo usuario fue creado correctametne. Ya puedes entrar."
+
+#: views.py:55
+msgid "Some errors were found processing your request. Please verify."
+msgstr "El formulario contiene errores. Por favor, verifíquelo."
+
+#: views.py:68
+msgid "User profile"
+msgstr "Perfil del usuario"
+
+#: views.py:76
+msgid "Profile changes saved"
+msgstr "Cambios del perfil guardados"
+
+#: views.py:91
+msgid "Add to favorites"
+msgstr "Agregar a favoritos"
+
+#: views.py:115 views.py:134 views.py:205 templates/blocks/navbar.html:26
+msgid "Sites"
+msgstr "Sitios"
+
+#: views.py:116 views.py:135
+#, python-format
+msgid "%s categories"
+msgstr "%s categorías"
+
+#: views.py:185 templates/news.html:49 templates/blocks/navbar.html:27
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: views.py:200
+msgid "Latest news by site"
+msgstr "Ultimas noticias por sitio"
+
+#: views.py:202
+msgid "Most viewed news by site"
+msgstr "Noticias más vistas por sitio"
+
+#: views.py:221
+msgid "Most popular news"
+msgstr "Noticias más populares"
+
+#: views.py:235
+#, python-format
+msgid "Search results for \"%(query)s\""
+msgstr "Resultado de la búsqueda \"%(query)s\""
+
+#: views.py:252
+#, python-format
+msgid "%(user)s favorites"
+msgstr "Favoritos de %(user)s"
+
+#: views.py:254 views.py:275 templates/profile.html:58
+msgid "Favorites"
+msgstr "Favoritos"
+
+#: views.py:255 templates/profile.html:66
+msgid "You don't have any favorites"
+msgstr "No tienes favoritos"
+
+#: views.py:289
+msgid "You have been logged out"
+msgstr "Haz sido deslogueado"
+
+#: views.py:295
+msgid "Frequently asked questions"
+msgstr "Preguntas frecuentes"
+
+#: views.py:301
+#, python-format
+msgid "About %(site)s"
+msgstr "Acerca de %(site)s"
+
+#: pages.py:87
+#, python-format
+msgid "Search in %s"
+msgstr "Buscar en %s"
+
+#: manipulators.py:6
+msgid "Must be 3-15 alphanumeric characters"
+msgstr "Debe ser alfanumérico de 3-15 letras"
+
+#: manipulators.py:7
+msgid "Password fields don't match"
+msgstr "Las claves no coinciden"
+
+#: manipulators.py:27 manipulators.py:58
+msgid "Username exists"
+msgstr "Usuario ya existe"
+
+#: manipulators.py:31 manipulators.py:62
+msgid "Email already in use"
+msgstr "Email en uso"
+
+#: sidebar.py:10
+msgid "This week"
+msgstr "Esta semana"
+
+#: sidebar.py:14
+msgid "Today"
+msgstr "Hoy"
+
+#: sidebar.py:23
+msgid "Range"
+msgstr "Rango"
+
+#: sidebar.py:30
+msgid "Last 24 hs"
+msgstr "Ultimas 24 hs"
+
+#: sidebar.py:31
+msgid "Last week"
+msgstr "Ultima semana"
+
+#: sidebar.py:32
+msgid "Last month"
+msgstr "Ultimo mes"
+
+#: sidebar.py:33
+msgid "Last year"
+msgstr "Ultimo año"
+
+#: sidebar.py:34
+msgid "All"
+msgstr "Todas"
+
+#: sidebar.py:39
+msgid "Order"
+msgstr "Orden"
+
+#: sidebar.py:43
+msgid "Most popular first"
+msgstr "Más populares primero"
+
+#: sidebar.py:44
+msgid "Latest first"
+msgstr "Ultimas primero"
+
+#: templates/register.html:9 templates/profile.html:9
+msgid "Account information"
+msgstr "Información de la cuenta"
+
+#: templates/register.html:12
+msgid "Choose a username"
+msgstr "Elije un nombre de usuario"
+
+#: templates/register.html:17
+msgid ""
+"Only alphanumeric characters. 3 characters miniumum, 15 characters maximum."
+msgstr ""
+"Solo se permiten caracteres alfanuméricos. 3 caracteres mínimo, 15 máximo."
+
+#: templates/register.html:22
+msgid "Enter your email"
+msgstr "Ingresa tu email"
+
+#: templates/register.html:28
+msgid "Choose a password"
+msgstr "Elije una clave"
+
+#: templates/register.html:33
+msgid "Must be at least 6 characters long"
+msgstr "Debe tener al menos 6 caracteres"
+
+#: templates/register.html:38 templates/profile.html:50
+msgid "Retype password"
+msgstr "Reingresa la clave"
+
+#: templates/register.html:46
+msgid "Create new user"
+msgstr "Crear nuevo usuario"
+
+#: templates/news.html:10
+msgid "Go back to"
+msgstr "Volver a"
+
+#: templates/news.html:35
+msgid "views"
+msgstr "vistas"
+
+#: templates/news.html:66
+msgid "View all news from"
+msgstr "Ver todas las noticias de"
+
+#: templates/news.html:73
+msgid "No news"
+msgstr "No hay noticias"
+
+#: templates/tags.html:8
+msgid "Tags by category"
+msgstr "Etiquetas por categoría"
+
+#: templates/tags.html:17
+msgid "No category tags"
+msgstr "No hay etiquetas por categoría"
+
+#: templates/tags.html:21
+msgid "Tags by keywords"
+msgstr "Etiquetas por palabras clave"
+
+#: templates/tags.html:30
+msgid "No keyword tags"
+msgstr "No hay etiquetas por palabras clave"
+
+#: templates/profile.html:12 templates/login.html:10
+msgid "Username"
+msgstr "Usuario"
+
+#: templates/profile.html:17
+msgid "4-15 alphanumeric characters allowed"
+msgstr "Debe tener 4-15 caracteres alfanuméricos"
+
+#: templates/profile.html:22
+msgid "Email"
+msgstr "Email"
+
+#: templates/profile.html:28
+msgid "First name"
+msgstr "Nombre"
+
+#: templates/profile.html:34
+msgid "Last name"
+msgstr "Apellido"
+
+#: templates/profile.html:40
+msgid "New password"
+msgstr "Nueva clave"
+
+#: templates/profile.html:45
+msgid "Leave blank if you don't want to change it"
+msgstr "Dejar en blanco si no deseas cambiarla"
+
+#: templates/profile.html:62
+msgid "Select the favorites you want to delete"
+msgstr "Elije los favoritos que deseas borrar"
+
+#: templates/profile.html:72
+msgid "Modify your profile"
+msgstr "Modificar tu perfil"
+
+#: templates/500.html:9
+msgid ""
+"The page you're trying to access is not working. Please, report this problem "
+"in the following page. Thanks"
+msgstr ""
+"La página que deseas acceder no está funcionando. Por favor, repota este "
+"problema en la siguiente página. Gracias"
+
+#: templates/login.html:15
+msgid "Password"
+msgstr "Clave"
+
+#: templates/404.html:9
+msgid "The page you're trying to access is no longer available."
+msgstr "La página que deseas acceder ya no está disponible."
+
+#: templates/addfavorite.html:8 templates/addfavorite.html.py:32
+msgid "Add favorite"
+msgstr "Agregar favorito"
+
+#: templates/addfavorite.html:11
+msgid "Enter a name for your new favorite"
+msgstr "Ingrese nombre del favorito"
+
+#: templates/addfavorite.html:16
+msgid "Only alphanumeric characters allowed"
+msgstr "Solo se permiten caracteres alfanuméricos"
+
+#: templates/addfavorite.html:21
+msgid "Favorite path"
+msgstr "Ruta del favorito"
+
+#: templates/boxes/subscribe.html:3
+msgid "Subscribe"
+msgstr "Suscribirse"
+
+#: templates/boxes/paginator.html:7
+msgid "articles"
+msgstr "noticias"
+
+#: templates/blocks/titlebar.html:8
+msgid "Search all"
+msgstr "Buscar todas"
+
+#: templates/blocks/titlebar.html:10
+msgid "today"
+msgstr "hoy"
+
+#: templates/blocks/titlebar.html:11
+msgid "week"
+msgstr "semana"
+
+#: templates/blocks/titlebar.html:12
+msgid "month"
+msgstr "mes"
+
+#: templates/blocks/titlebar.html:13
+msgid "year"
+msgstr "año"
+
+#: templates/blocks/titlebar.html:14
+msgid "all"
+msgstr "todas"
+
+#: templates/blocks/footbar.html:9
+msgid "About this site"
+msgstr "Acerca de este sitio"
+
+#: templates/blocks/navbar.html:8
+msgid "Profile"
+msgstr "Perfil"
+
+#: templates/blocks/navbar.html:10
+msgid "Admin"
+msgstr "Admin"
+
+#: templates/blocks/navbar.html:12
+msgid "Logout"
+msgstr "Salir"
+
+#: templates/blocks/navbar.html:15
+msgid "Register"
+msgstr "Registrarse"
+
+#: templates/blocks/navbar.html:18
+msgid "Help"
+msgstr "Ayuda"
+
+#: templates/blocks/navbar.html:25
+msgid "Popular"
+msgstr "Populares"
+
+#: templates/blocks/navbar.html:30
+msgid "feedback?"
+msgstr "comentarios?"

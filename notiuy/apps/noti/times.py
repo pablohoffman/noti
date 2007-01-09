@@ -1,16 +1,16 @@
 from datetime import datetime, date, timedelta
 import re
 
+dtre = re.compile(r'^(\d\d\d\d)-?(\d\d)-?(\d\d)$')
+labels = {'today': _('last 24 hs'),
+          'week': _('last week'),
+          'month': _('last month'),
+          'year': _('last year'),
+          'all': _('all times'),}
+days = {'today': 1, 'week':  7, 'month': 31, 'year':  365}
+
 class When:
     "Class which represents an abstract time range for displaying articles"
-
-    dtre = re.compile(r'^(\d\d\d\d)-?(\d\d)-?(\d\d)$')
-    labels = {'today': _('last 24 hs'),
-              'week': _('last week'),
-              'month': _('last month'),
-              'year': _('last year'),
-              'all': _('all times'),}
-    days = {'today': 1, 'week':  7, 'month': 31, 'year':  365}
 
     def __init__(self, whenstr=''):
         self.range = self.year = self.month = self.day = self.label = ''
@@ -21,19 +21,19 @@ class When:
         self.end = datetime.now()
         if not whenstr or whenstr=='today':
             self.range = 'today'
-            self.label = 'last 24 hs'
+            self.label = _('last 24 hs')
             self.start = datetime.now().replace(hour=0, minute=0, second=0)
         elif whenstr == 'all':
             self.range = 'all'
-            self.label = 'all times'
+            self.label = _('all times')
             self.start = datetime.min
             self.end = datetime.now()
         elif whenstr[0:4] == 'last':
             self.range = whenstr[4:]
-            self.label = self.labels[self.range]
-            self.start = datetime.now() - timedelta(self.days[self.range])
+            self.label = labels[self.range]
+            self.start = datetime.now() - timedelta(days[self.range])
         else:
-            m = self.dtre.match(whenstr)
+            m = dtre.match(whenstr)
             self.archived = True
             if m:
                 self.year, self.month, self.day = m.groups()
