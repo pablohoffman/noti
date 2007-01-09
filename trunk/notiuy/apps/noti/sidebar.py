@@ -16,7 +16,7 @@ class DayNav:
         td = timedelta(1)
         for i in range(1, 7):
             dt -= td
-            self.links.append({'url': pl + dt.strftime('%Y-%m-%d/'), 'label': dt.strftime('%A %d'), 'selected': when.date==dt.date()})
+            self.links.append({'url': pl + dt.strftime('%Y-%m-%d/'), 'label': dt.strftime('%A %d').capitalize(), 'selected': when.date==dt.date()})
 
 
 class RangeNav:
