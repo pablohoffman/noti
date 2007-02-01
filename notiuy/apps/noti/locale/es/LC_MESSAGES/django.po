@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Noti 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-06 21:24-0200\n"
+"POT-Creation-Date: 2007-02-01 07:02-0200\n"
 "PO-Revision-Date: 2007-01-06 20:43-0200\n"
 "Last-Translator: Pablo Hoffman <pablo@pablohoffman.com>\n"
 "Language-Team: Pablo Hoffman <pablo@pablohoffman.com>\n"
@@ -16,23 +16,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: times.py:8 times.py:24
+#: times.py:5 times.py:24
 msgid "last 24 hs"
 msgstr "últimas 24 hs"
 
-#: times.py:9
+#: times.py:6
 msgid "last week"
 msgstr "última semana"
 
-#: times.py:10
+#: times.py:7
 msgid "last month"
 msgstr "último mes"
 
-#: times.py:11
+#: times.py:8
 msgid "last year"
 msgstr "último año"
 
-#: times.py:12 times.py:28
+#: times.py:9 times.py:28
 msgid "all times"
 msgstr "de siempre"
 
@@ -78,7 +78,7 @@ msgstr "Sitios"
 msgid "%s categories"
 msgstr "%s categorías"
 
-#: views.py:185 templates/news.html:49 templates/blocks/navbar.html:27
+#: views.py:185 templates/news.html:50 templates/blocks/navbar.html:27
 msgid "Tags"
 msgstr "Etiquetas"
 
@@ -224,19 +224,19 @@ msgstr "Reingresa la clave"
 msgid "Create new user"
 msgstr "Crear nuevo usuario"
 
-#: templates/news.html:10
+#: templates/news.html:14
 msgid "Go back to"
 msgstr "Volver a"
 
-#: templates/news.html:35
+#: templates/news.html:40
 msgid "views"
 msgstr "vistas"
 
-#: templates/news.html:66
+#: templates/news.html:63
 msgid "View all news from"
 msgstr "Ver todas las noticias de"
 
-#: templates/news.html:73
+#: templates/news.html:70
 msgid "No news"
 msgstr "No hay noticias"
 
@@ -323,6 +323,15 @@ msgstr "Solo se permiten caracteres alfanuméricos"
 #: templates/addfavorite.html:21
 msgid "Favorite path"
 msgstr "Ruta del favorito"
+
+#: templates/boxes/msiewarning.html:6
+msgid ""
+"Warning: This site looks better with a standards-compliant browser, such as"
+msgstr "Advertencia: Este sitio se ve mejor con un navegador que soporte estándares, como"
+
+#: templates/boxes/msiewarning.html:6
+msgid "You won't see this warning again."
+msgstr "Esta advertencia no será desplegada nuevamente."
 
 #: templates/boxes/subscribe.html:3
 msgid "Subscribe"

@@ -23,7 +23,7 @@ TIME_ZONE = 'America/Montevideo'
 # Language code for this installation. All choices can be found here:
 # http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
 # http://blogs.law.harvard.edu/tech/stories/storyReader$15
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es_ES'
 
 SITE_ID = 1
 
@@ -54,8 +54,10 @@ TEMPLATE_LOADERS = (
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.doc.XViewMiddleware',
+    'notiuy.apps.noti.middleware.NotiMiddleware',
 )
 
 ROOT_URLCONF = 'notiuy.urls'
@@ -65,6 +67,10 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     "/opt/notiuy/apps/noti/templates",
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'notiuy.apps.noti.contexts.noti',
 )
 
 INSTALLED_APPS = (

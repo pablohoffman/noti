@@ -5,11 +5,17 @@
 
 {% include "blocks/sidebar.html" %}
 
+{% if msienew %}
+{% include "boxes/msiewarning.html" %}
+{% endif %}
+
 {% if page.back %}
 <div class='more'>
 <a href='{{ page.back.link }}'>&larr; {% trans "Go back to" %} {{ page.back.label }}</a>
 </div>
 {% endif %}
+
+<div class='contents1'>
 
 {% include "boxes/paginator.html" %}
 
@@ -25,39 +31,30 @@
 
 {% for article in section.articles %}
 <div class='article'>
-
-<div class='info'>
-<div class='source'>
-<span class='site'><a href='{{ article.site.link }}'>{{ article.site.name|escape }}</a></span><br />
-<span class='category'><a href='{{ article.category.link }}'>{{ article.category.name|escape }}</a></span>
-</div>
-<div class='rank {% if article.is_popular %}popular{% endif %}'>
-<strong>{{ article.rank }}</strong> {% trans "views" %}
-</div>
-</div>
-
-<div class='data'>
-<h2><a href='{{ article.link }}' rel='nofollow'>{{ article.title|removetags:"p"|escape }}</a></h2>
-
-<div class='header'>
-
-<div class='date'>
-{{ article.datetime|date:"j M Y, g:i a" }}
-</div>
-
-<div class='tags'>
+	<div class='info'>
+		<div class='source'>
+			<span class='site'><a href='{{ article.site.link }}'>{{ article.site.name|escape }}</a></span><br />
+			<span class='category'><a href='{{ article.category.link }}'>{{ article.category.name|escape }}</a></span>
+		</div>
+		<div class='rank {% if article.is_popular %}popular{% endif %}'>
+			<strong>{{ article.rank }}</strong> {% trans "views" %}
+		</div>
+	</div>
+	<div class='data'>
+		<h2><a href='{{ article.link }}' rel='nofollow'>{{ article.title|removetags:"p"|escape }}</a></h2>
+		<div class='header'>
+			<div class='date'>
+				{{ article.datetime|date:"j M Y, g:i a" }}
+			</div>
+			<div class='tags'>
 {% trans "Tags" %}: 
 {% for tag in article.alltags %}
-<a href='{{ tag.link }}'>{{ tag.name }}</a> 
+				<a href='{{ tag.link }}'>{{ tag.name }}</a> 
 {% endfor %}
-</div>
-
-</div>
-
-</div>
-
-<p>{{ article.text|removetags:"p"|escape }}</p>
-
+			</div>
+		</div>
+	</div>
+	<p>{{ article.text|removetags:"p"|escape }}</p>
 </div>
 {% endfor %}
 
@@ -78,5 +75,7 @@
 {% else %}
 <p class='empty'><span class='tip'>{{ page.nosections }}</span></p>
 {% endif %}
+
+</div> <!-- contents1 -->
 
 {% endblock %}
