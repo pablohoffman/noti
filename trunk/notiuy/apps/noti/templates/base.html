@@ -4,12 +4,16 @@
 <head>
   <title>{{ page.title }} | {{ cfg.sitename }}</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-  <link rel="stylesheet" type="text/css" href="{{ cfg.urlbase }}/media/styles.css" />
+  <link rel="stylesheet" type="text/css" href="{{ cfg.urlbase }}/media/{{ cssfile }}" />
+  <link rel="icon" href="{{ cfg.urlbase }}/media/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="{{ cfg.urlbase }}/media/favicon.ico" type="image/x-icon" />
 {% if page.subs %}
   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ page.subs.rss2|escape }}" />
   <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ page.subs.atom|escape }}" />
 {% endif %}
+{% if msie %}{% else %}
   <script type="text/javascript" src="{{ cfg.urlbase }}/media/noti.js" />
+{% endif %}
 {% include "custom/head.html" %}
 </head>
 
