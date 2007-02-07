@@ -11,9 +11,7 @@
   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ page.subs.rss2|escape }}" />
   <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ page.subs.atom|escape }}" />
 {% endif %}
-{% if msie %}{% else %}
-  <script type="text/javascript" src="{{ cfg.urlbase }}/media/noti.js" />
-{% endif %}
+  <script type="text/javascript" src="{{ cfg.urlbase }}/media/noti.js"></script>
 {% include "custom/head.html" %}
 </head>
 
